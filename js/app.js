@@ -43,10 +43,12 @@ window.addEventListener("beforeinstallprompt", async (e) => {
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
   //Check if the app is already installed
-  let apps = await navigator.getInstalledRelatedApps();
-  console.log(apps);
-  if (apps.length > 0) {
-    return;
+
+  if ("getInstalledRelatedApps" in navigator) {
+    let apps = await navigator.getInstalledRelatedApps();
+    if (apps.length > 0) {
+      return;
+    }
   }
   // Update UI notify the user they can install the PWA
   showInstallPromotion();

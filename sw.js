@@ -10,5 +10,5 @@ self.addEventListener("activate", (evt) => {
 
 //fetch event (mandatory)
 self.addEventListener("fetch", (evt) => {
-  console.log("fetch event", evt);
+  //   console.log("fetch event", evt);
 });

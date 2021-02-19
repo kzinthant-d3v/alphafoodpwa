@@ -24,6 +24,16 @@ nav .sidenav-trigger{
   margin: 0;
 }
 
+.installbtn{
+  transform: scale(0.9);
+  background-color: #545554;
+  display: none;
+}
+@media all and (display-mode: standalone) {
+  .installbtn{
+    display: none;
+  }
+}
 /* recipe styles */
 .recipes{
   margin-top: 20px;

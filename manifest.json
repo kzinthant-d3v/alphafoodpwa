@@ -1,7 +1,15 @@
 {
     "name": "Alpha Food",
     "short_name": "AlphaFood",
+    "scope":"/",
     "start_url": "/index.html",
+    "related_applications":[{
+      "platform":"webapp",
+      "url":"http://localhost:5500/manifest.json"
+    },{
+      "platform":"webapp",
+      "url":"https://alphafood.netlify.app/manifest.json"
+    }],
     "display": "standalone",
     "background_color": "#4caf50",
     "theme_color": "#4caf50",

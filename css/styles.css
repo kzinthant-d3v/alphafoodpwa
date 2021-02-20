@@ -75,6 +75,8 @@ nav .sidenav-trigger{
 .add-btn{
   background: var(--title) !important;
 }
+.btn-small{
+color: black}
 input{
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
